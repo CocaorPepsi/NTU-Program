@@ -5,7 +5,7 @@ app = Flask(__name__)
 import google.generativeai as palm
 import os
 
-api = os.getenv(MAKERSUITE_API_TOKEN)
+api = os.getenv("MAKERSUITE_API_TOKEN")
 palm.configure(api_key=api)
 model = {"model":"models/chat-bison-001"}
 
